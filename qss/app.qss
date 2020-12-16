@@ -1,0 +1,91 @@
+* {
+        font-family: "微软雅黑"
+}
+
+QWidget#Widget {
+        border-image: url(:/images/background.jpg);
+        color: rgb(255, 255, 255);
+}
+
+QToolButton {
+        border-radius: 20px;
+}
+
+QToolButton:hover {
+
+        background-color: rgba(128, 128, 128, 128);
+}
+
+QToolButton#closeToolBtn:hover {
+        background-color: rgba(255, 0, 0, 128);
+}
+
+#playlistPushBtn, #localPushBtn, #favoritePushBtn {
+        border-radius: 20px;
+}
+#playlistPushBtn:hover, #localPushBtn:hover, #favoritePushBtn:hover {
+        background-color: rgba(128, 128, 128, 128);
+}
+
+#playlistPushBtn:pressed, #localPushBtn:pressed, #favoritePushBtn:pressed {
+        background-color: rgba(100, 100, 100, 128);
+}
+
+#playlistPushBtn:checked, #localPushBtn:checked, #favoritePushBtn:checked {
+    background-color: rgba(0, 0, 0, 128);
+}
+
+#stackedWidget, #stackedWidget .QWidget {
+        background-color: transparent;
+}
+
+QListWidget, QTableWidget {
+        background-color: rgba(0, 0, 0, 128);
+}
+
+QListWidget {
+        alternate-background-color: rgba(170, 255, 0, 50);
+        show-decoration-selected: 1;
+}
+
+QListWidget::item:hover {
+        background-color: rgba(255, 170, 0, 128);
+        color: rgb(85, 170, 255);
+}
+
+QListWidget::item:selected, QTableWidget::item:selected {
+        background-color: rgb(255, 170, 0);
+        border: none;
+}
+
+QTableWidget {
+    alternate-background-color: rgba(170, 255, 0, 50);
+    selection-background-color: rgb(255, 170, 0);
+}
+
+QHeaderView::section {
+    background-color: rgb(85, 170, 255);
+}
+
+.QSlider::groove:horizontal {
+        background-color: transparent;
+        height: 4px;
+}
+
+.QSlider::sub-page:horizontal {
+        background-color: rgb(255, 255, 255);
+}
+
+.QSlider::add-page:horizontal {
+        background-color: rgba(255, 255, 255, 128);
+}
+
+.QSlider::handle:horizontal {
+        width: 16px;
+        margin: -6px 0;
+        border-image: url(:/images/sliderHandle.png);
+}
+
+#warningLabel {
+    color: red;
+}
